@@ -15,10 +15,12 @@ export default function Home() {
           <Navbar />
           <div className="px-12 grid grid-cols-3 mt-24">
             <div className="col-span-2">
-              <h1 className="text-9xl font-medium">I'm Meet Zinzuvadiya.</h1>
+              <h1 className="text-9xl font-medium">
+                I`&apos;`m Meet Zinzuvadiya.
+              </h1>
               <p className="text-4xl font-light mt-24">
-                I'm a blockchain developer who build microservices that connect
-                people. Available for work.
+                I`&apos;`m a blockchain developer who build microservices that
+                connect people. Available for work.
               </p>
             </div>
             <div className="flex flex-col justify-center">

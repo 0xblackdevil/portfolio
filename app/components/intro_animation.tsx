@@ -57,7 +57,7 @@ export default function IntroScreen() {
             <h1 className="text-7xl">નમસ્કાર 🙏🏻</h1>
           </motion.div>
           <p className="absolute bottom-8 opacity-25 text-lg">
-            You've landed on Meet Zinzuvadiya's Portfolio
+            You`&apos;`ve landed on Meet Zinzuvadiya`&apos;`s Portfolio
           </p>
         </motion.div>
       )}
