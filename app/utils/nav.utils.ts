@@ -10,7 +10,7 @@ export const navItems: INavItem[] = [
   },
   {
     title: "Works",
-    link: "#",
+    link: "#works",
   },
   {
     title: "Contact",

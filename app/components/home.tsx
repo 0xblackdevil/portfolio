@@ -6,10 +6,10 @@ export default function HomeView() {
     <div className="h-screen absolute top-0 ">
       <div className="px-12 grid grid-cols-3 mt-48">
         <div className="col-span-2">
-          <h1 className="text-9xl font-medium">I`&apos;`m Meet Zinzuvadiya.</h1>
+          <h1 className="text-9xl font-medium">I&apos;m Meet Zinzuvadiya.</h1>
           <p className="text-4xl font-light mt-24">
-            I`&apos;`m a blockchain developer who build microservices that
-            connect people. Available for work.
+            I&apos;m a blockchain developer who build microservices that connect
+            people. Available for work.
           </p>
         </div>
         <div className="flex flex-col justify-center">

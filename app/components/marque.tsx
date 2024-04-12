@@ -2,21 +2,21 @@
 import { motion } from "framer-motion";
 import { marque_text } from "../utils/marque.utils";
 
-export default function MarqueText() {
-  const marqueeVariants = {
-    animate: {
-      x: [0, -1000],
-      transition: {
-        x: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: 10,
-          ease: "linear",
-        },
+export const marqueeVariants = {
+  animate: {
+    x: [0, -1000],
+    transition: {
+      x: {
+        repeat: Infinity,
+        repeatType: "loop",
+        duration: 10,
+        ease: "linear",
       },
     },
-  };
+  },
+};
 
+export default function MarqueText() {
   return (
     <div className="overflow-x-hidden relative w-screen max-w-full bg-[#fd5732]">
       <motion.div

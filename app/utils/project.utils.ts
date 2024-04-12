@@ -8,6 +8,7 @@ interface IProject {
     data: string;
   }[];
   projectLink: string;
+  spacialTags?: { title: string; textColor: string }[];
   tachstack: string[];
   images: { url: string; position: string }[];
 }
@@ -29,7 +30,7 @@ export const projects: IProject[] = [
       },
       {
         title: "Date",
-        data: "2024 - present",
+        data: "Feb 2024 - present",
       },
     ],
     projectLink: "https://0xdomegle.com",
@@ -46,11 +47,11 @@ export const projects: IProject[] = [
       },
       {
         url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=3155&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "",
+        position: "col-span-1",
       },
       {
         url: "https://plus.unsplash.com/premium_photo-1681160405580-a68e9c4707f9?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "",
+        position: "col-span-1",
       },
       {
         url: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -62,12 +63,11 @@ export const projects: IProject[] = [
     backgroundColor: "bg-[#6c35de]",
     borderColor: "border-[#6c35de]",
     title: "Incognance",
-    description:
-      "A chat application that connects people with similar interests.",
+    description: "Vote in the Shadows, Rule in the Light",
     projectState: [
       {
         title: "Project",
-        data: "Domegle.com",
+        data: "Devfolio",
       },
       {
         title: "Role",
@@ -75,11 +75,19 @@ export const projects: IProject[] = [
       },
       {
         title: "Date",
-        data: "2024 - present",
+        data: "Dec 2023",
       },
     ],
-    projectLink: "https://0xdomegle.com",
-    tachstack: ["React", "TypeScript", "Socket.IO"],
+    projectLink: "https://devfolio.co/projects/incognance-a218",
+    spacialTags: [
+      { title: "Built at ETHIndia 2023", textColor: "text-[#6c35de]" },
+    ],
+    tachstack: [
+      "React Js",
+      "Node js | express",
+      "wagmi",
+      "Solidity | Poligon zkEVM",
+    ],
     images: [
       {
         url: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -87,11 +95,11 @@ export const projects: IProject[] = [
       },
       {
         url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=3155&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "",
+        position: "col-span-1",
       },
       {
         url: "https://plus.unsplash.com/premium_photo-1681160405580-a68e9c4707f9?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "",
+        position: "col-span-1",
       },
       {
         url: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -103,12 +111,11 @@ export const projects: IProject[] = [
     backgroundColor: "bg-[#2E8B57]",
     borderColor: "border-[#2E8B57]",
     title: "Mediblock",
-    description:
-      "A chat application that connects people with similar interests.",
+    description: "Health management system",
     projectState: [
       {
         title: "Project",
-        data: "Domegle.com",
+        data: "Devfolio",
       },
       {
         title: "Role",
@@ -116,10 +123,11 @@ export const projects: IProject[] = [
       },
       {
         title: "Date",
-        data: "2024 - present",
+        data: "Sep 2022 - Mar 2023",
       },
     ],
-    projectLink: "https://0xdomegle.com",
+    projectLink: "https://devfolio.co/projects/mediblock-4fb1",
+
     tachstack: ["React", "TypeScript", "Socket.IO"],
     images: [
       {
@@ -128,11 +136,11 @@ export const projects: IProject[] = [
       },
       {
         url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=3155&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "",
+        position: "col-span-1",
       },
       {
         url: "https://plus.unsplash.com/premium_photo-1681160405580-a68e9c4707f9?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "",
+        position: "col-span-1",
       },
       {
         url: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -144,24 +152,25 @@ export const projects: IProject[] = [
     backgroundColor: "bg-[#fd5732]",
     borderColor: "border-[#fd5732]",
     title: "Drivably",
-    description:
-      "A chat application that connects people with similar interests.",
+    description: "Car Safety Assistant",
     projectState: [
       {
         title: "Project",
-        data: "Domegle.com",
+        data: "Drivably",
       },
       {
         title: "Role",
-        data: "Full Stack Dev",
+        data: "Flutter Developer",
       },
       {
         title: "Date",
-        data: "2024 - present",
+        data: "Jan 2021 - Apr 2021",
       },
     ],
-    projectLink: "https://0xdomegle.com",
-    tachstack: ["React", "TypeScript", "Socket.IO"],
+    projectLink:
+      "https://www.canva.com/design/DAEYuKlW7to/vlNOPYP7R2P4O0ZsVCpmeQ/view",
+    spacialTags: [{ title: "Final Year Project", textColor: "text-[#fd5732]" }],
+    tachstack: ["Raspberry Pi", "FastAPI | OpenCV", "MongoDB", "Flutter"],
     images: [
       {
         url: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -169,11 +178,11 @@ export const projects: IProject[] = [
       },
       {
         url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=3155&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "",
+        position: "col-span-1",
       },
       {
         url: "https://plus.unsplash.com/premium_photo-1681160405580-a68e9c4707f9?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "",
+        position: "col-span-1",
       },
       {
         url: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

@@ -2,26 +2,25 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function IntroScreen() {
-  const [isExited, setIsExited] = useState(false); // Start with false to show the intro
+  const [isExited, setIsExited] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsExited(true); // Hide the intro after 1 second
+      setIsExited(true);
     }, 1000);
 
-    // Cleanup the timer if the component unmounts
     return () => clearTimeout(timer);
-  }, []); // Empty dependency array to run only once on mount
+  }, []);
 
   return (
     <AnimatePresence>
-      {!isExited && ( // Change this to !isExited to show the component initially
+      {!isExited && (
         <motion.div
           variants={{
             end: {
               opacity: 0,
               y: 10000,
-              filter: "blur(10px)",
+              filter: "blur(3px)",
               transition: { ease: "easeIn", duration: 1.5, delay: 0.3 },
             },
           }}
@@ -40,13 +39,13 @@ export default function IntroScreen() {
                 opacity: 1,
                 y: 0,
                 filter: "blur(0px)",
-                transition: { type: "spring", duration: 0.7 },
+                transition: { type: "spring", duration: 0.5 },
               },
               end: {
                 opacity: 0,
                 y: 50,
                 filter: "blur(5px)",
-                transition: { ease: "easeIn", duration: 0.5 },
+                transition: { ease: "easeIn", duration: 0.7 },
               },
             }}
             initial="start"
@@ -57,7 +56,7 @@ export default function IntroScreen() {
             <h1 className="text-7xl">નમસ્કાર 🙏🏻</h1>
           </motion.div>
           <p className="absolute bottom-8 opacity-25 text-lg">
-            You`&apos;`ve landed on Meet Zinzuvadiya`&apos;`s Portfolio
+            You&apos;ve landed on Meet Zinzuvadiya&apos;s Portfolio
           </p>
         </motion.div>
       )}
