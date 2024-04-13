@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function Contact() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="h-screen bg-black  text-white">
+    <div className="h-screen bg-black relative text-white">
       <div className="flex flex-col justify-between h-screen py-20 px-12">
         <div>
           <h1 className="text-8xl w-2/3 mb-12">

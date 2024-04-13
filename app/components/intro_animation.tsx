@@ -25,7 +25,7 @@ export default function IntroScreen() {
             },
           }}
           exit="end"
-          className="h-screen w-screen flex justify-center items-center bg-black absolute z-50 text-white"
+          className="h-screen w-screen flex justify-center items-center bg-black z-50 text-white fixed overflow-hidden"
         >
           <motion.div
             variants={{

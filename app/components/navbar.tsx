@@ -4,17 +4,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between items-center px-12 py-5">
+    <div className="flex justify-between items-center ">
       <div className="flex gap-3 items-center">
-        <div className="w-9 h-9 bg-black rounded-full">
-          {/* <Image
-            src="/me.jpg"
-            width={32}
-            height={32}
-            alt="Picture of the author"
-            className="object-contain rounded-full"
-          /> */}
-        </div>
+        <div className="w-9 h-9 bg-black rounded-full"></div>
         <p>0x.meet</p>
       </div>
 
