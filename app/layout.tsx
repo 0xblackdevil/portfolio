@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Meet Zinzuvadiya",
-  description: "Full stack blockchain developer",
+  description:
+    "Meet Zinzuvadiya, a pioneering Full Stack Blockchain Developer from Pune, enhancing digital interactions with innovative projects like Domegle and Mediblock. Discover blockchain-driven solutions in social media and health record management",
 };
 
 export default function RootLayout({

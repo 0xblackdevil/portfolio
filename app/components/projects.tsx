@@ -72,6 +72,7 @@ export default function Projects() {
                 key={index}
                 src={image.url}
                 className={`${image.position} rounded-2xl object-cover w-screen`}
+                alt="project image"
               />
             ))}
           </div>

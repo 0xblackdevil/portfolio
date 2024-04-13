@@ -25,6 +25,7 @@ export default function Certificates() {
               key={index}
               src={certificate}
               className="object-cover rounded-xl whitespace-nowrap"
+              alt={"certificate image"}
             />
           ))}
         </motion.div>
