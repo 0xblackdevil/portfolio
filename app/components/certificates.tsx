@@ -4,12 +4,12 @@ import { certificates } from "../utils/certificate.utils";
 
 export default function Certificates() {
   return (
-    <div className="h-[1000px] flex flex-col justify-center bg-[#cee8ff] gap-12">
+    <div className="h-[600px] lg:h-[1000px] flex flex-col justify-center bg-[#f1f1f1] gap-12">
       <div className="flex flex-col justify-center items-center w-screen">
-        <h1 className="text-8xl w-3/5 text-center font-medium mb-14">
+        <h1 className="text-3xl lg:text-8xl w-2/3 lg:w-3/5 text-center lg:font-medium mb-14">
           There&apos;s a lot more on my github.
         </h1>
-        <div className="text-2xl border border-black px-8 py-3 rounded-full">
+        <div className="text-lg lg:text-2xl border border-black px-8 py-3 rounded-full">
           github.com/0xblackdevil
         </div>
       </div>

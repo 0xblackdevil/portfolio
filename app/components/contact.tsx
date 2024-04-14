@@ -9,13 +9,13 @@ export default function Contact() {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="h-screen bg-black relative text-white">
-      <div className="flex flex-col justify-between h-screen py-20 px-12">
+      <div className="flex flex-col justify-between h-screen py-20 px-6 lg:px-12">
         <div>
-          <h1 className="text-8xl w-2/3 mb-12">
+          <h1 className="text-3xl lg:text-8xl lg:w-2/3 mb-12">
             Available for work, Let&apos;s connect.
           </h1>
           <div className="flex">
-            <div className="border border-white rounded-full px-8 py-3 text-2xl hover:bg-white hover:text-black hover:cursor-pointer duration-300 font-normal">
+            <div className="border border-white rounded-full px-8 py-3 text-lg lg:text-2xl hover:bg-white hover:text-black hover:cursor-pointer duration-300 font-normal">
               <Link href={"https://calendly.com/0x-meet-zinzuvadiya/30min"}>
                 Book a call
               </Link>
@@ -23,22 +23,24 @@ export default function Contact() {
           </div>
         </div>
         <div>
-          <p className="text-2xl text-white/50 mb-8">
+          <p className="text-lg lg:text-2xl text-white/50 mb-5 lg:mb-8">
             Find me elsewhere on web,
           </p>
-          <div className="flex gap-5 text-2xl">
+          <div className="flex flex-col lg:flex-row gap-5 text-lg lg:text-2xl">
             {socials.map((social, index) => (
-              <Link
-                key={index}
-                href={social.url}
-                className=" border-b border-b-white/30 hover:border-b-white duration-300 pb-2"
-              >
-                {social.name}
-              </Link>
+              <div className="flex lg:block">
+                <Link
+                  key={index}
+                  href={social.url}
+                  className=" border-b border-b-white/30 hover:border-b-white duration-300 pb-2"
+                >
+                  {social.name}
+                </Link>
+              </div>
             ))}
           </div>
         </div>
-        <p className="text-xl">
+        <p className="text-sm lg:text-xl">
           Inspired from{" "}
           <Link
             href={"https://dribbble.com/shots/23502486-Design-Portfolio"}
@@ -58,7 +60,7 @@ export default function Contact() {
             },
           }}
           animate={isHovered ? "animate" : "end"}
-          className="bg-white text-black h-16 w-16 rounded-full absolute bottom-20 right-12 flex justify-center items-center text-2xl"
+          className="bg-white text-black h-8 w-8 lg:h-16 lg:w-16 rounded-full absolute bottom-20 right-6 lg:right-12 flex justify-center items-center text-sm lg:text-2xl font-thin"
           onHoverStart={() => setIsHovered(true)}
           onHoverEnd={() => setIsHovered(false)}
         >

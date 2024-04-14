@@ -4,7 +4,7 @@ import { marque_text } from "../utils/marque.utils";
 
 export const marqueeVariants = {
   animate: {
-    x: [0, -1000],
+    x: [0, -500],
     transition: {
       x: {
         repeat: Infinity,
@@ -26,7 +26,7 @@ export default function MarqueText() {
       >
         <div className="flex  text-white py-6 text-xl items-center">
           {marque_text.map((text, index) => (
-            <div key={index} className="flex items-center">
+            <div key={index} className="flex items-center text-base">
               <p className="text-clip">{text}</p>
               <div className="h-2 w-2 bg-white rounded-full mx-5 " />
             </div>

@@ -5,25 +5,30 @@ export default function Projects() {
   return (
     <div className="relative">
       {projects.map((project, index) => (
-        <div key={index} className="snap-always snap-start bg-white">
-          <div className={`px-12 ${project.backgroundColor} h-[1000px]`}>
-            <div className="py-20 text-white text-sm tracking-wide ">
-              <div className="grid grid-cols-2">
+        <div key={index} className=" bg-white">
+          <div
+            className={`px-6 lg:px-12 ${project.backgroundColor} h-[600px] lg:h-[1000px]`}
+          >
+            <div className="py-12 lg:py-20 text-white text-sm tracking-wide ">
+              <div className="grid grid-cols-1 lg:grid-cols-2">
                 {/* project detail component */}
-                <div className=" flex flex-col gap-24 col-span-1">
+                <div className=" flex flex-col gap-12 lg:gap-24 col-span-1">
                   <div>
                     <div className="mb-14">
                       0{index + 1}{" "}
                       <span className="opacity-50"> / 0{projects.length}</span>
                     </div>
-                    <div className="text-5xl">
+                    <div className="text-2xl lg:text-5xl">
                       {project.title} - {project.description}
                     </div>
                   </div>
                   {/* more detail grid */}
-                  <div className="grid grid-cols-3 gap-16">
+                  <div className="grid grid-rows-3 lg:grid-cols-3 gap-6 lg:gap-16">
                     {project.projectState.map((state, index) => (
-                      <div key={index} className="flex flex-col gap-2 text-lg">
+                      <div
+                        key={index}
+                        className="flex flex-col gap-1 lg:gap-2 text-md lg:text-lg"
+                      >
                         <p className="opacity-50">{state.title}</p>
                         {index === 0 ? (
                           <Link
@@ -40,7 +45,7 @@ export default function Projects() {
                   </div>
                 </div>
                 {/* tach stack */}
-                <div className="flex justify-end items-start col-span-1">
+                <div className="hidden lg:flex justify-end items-start lg:col-span-1">
                   <div className="flex flex-col whitespace-nowrap gap-4 items-end justify-end">
                     {project.spacialTags?.map((stack, index) => (
                       <p
@@ -66,7 +71,7 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 px-12 gap-12 -mt-[500px] py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 px-6 lg:px-12 gap-3 lg:gap-12 -mt-[100px] lg:-mt-[500px] pb-8 lg:pb-0 lg:py-20">
             {project.images.map((image, index) => (
               <img
                 key={index}
