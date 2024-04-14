@@ -28,9 +28,8 @@ export default function Contact() {
           </p>
           <div className="flex flex-col lg:flex-row gap-5 text-lg lg:text-2xl">
             {socials.map((social, index) => (
-              <div className="flex lg:block">
+              <div className="flex lg:block" key={index}>
                 <Link
-                  key={index}
                   href={social.url}
                   className=" border-b border-b-white/30 hover:border-b-white duration-300 pb-2"
                 >
