@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { projects } from "../utils/project.utils";
 import MarqueText from "./marque";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function HeroWrapper() {
   return (
@@ -24,14 +25,16 @@ export default function HeroWrapper() {
           <div className="mt-4 lg:mt-8 text-xl">
             {projects.map((project, index) => (
               <div key={index} className="group">
-                <div className="border-b-3 text-sm lg:text-lg font-light border-b-2 py-4 lg:py-5 group-hover:border-black duration-500 flex justify-between items-center">
-                  {project.title}
+                <Link href={`#${project.title}`}>
+                  <div className="border-b-3 text-sm lg:text-lg font-light border-b-2 py-4 lg:py-5 group-hover:border-black duration-500 flex justify-between items-center">
+                    {project.title}
 
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    className="text-black lg:text-white group-hover:text-black duration-500 -translate-x-5 group-hover:translate-x-0"
-                  />
-                </div>
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="text-black lg:text-white group-hover:text-black duration-500 -translate-x-5 group-hover:translate-x-0"
+                    />
+                  </div>
+                </Link>
               </div>
             ))}
           </div>

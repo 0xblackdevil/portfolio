@@ -6,7 +6,13 @@ export default function Navbar() {
   return (
     <div className="flex justify-between items-center px-3 py-1 lg:p-0 rounded-full bg-white lg:bg-transparent">
       <div className="flex lg:gap-3 items-center">
-        <div className="w-5 h-5 lg:w-9 lg:h-9 bg-black rounded-full"></div>
+        <Image
+          src="/IMG_2546.jpg"
+          alt="Meet Zinzuvadiya"
+          width={200}
+          height={200}
+          className=" w-5 h-5 lg:w-9 lg:h-9 rounded-full bg-black object-cover grayscale"
+        />
         <p className="lg:block hidden ">0x.meet</p>
       </div>
 

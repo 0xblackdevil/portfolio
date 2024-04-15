@@ -15,6 +15,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import HeroWrapper from "./components/top-sticky-wrapper";
 import Projects from "./components/projects";
 import Certificates from "./components/certificates";
+import AboutComponent from "./components/about";
 
 export default function Home() {
   const projectContainer = useRef(null);
@@ -38,17 +39,17 @@ export default function Home() {
       <div className="loader">
         <IntroScreen />
       </div>
-      <div className="navbar-component z-40 w-screen bg-transparent px-5 pt-7 lg:px-12 lg:py-4 fixed overflow-hidden">
+      <div className="navbar-component z-30 w-screen bg-transparent px-5 pt-7 lg:px-12 lg:py-4 fixed overflow-hidden">
         <Navbar />
       </div>
       <main className="main-wraper">
-        <aside className="about-component fixed z-50">
-          <div className="w-3/5 min-w-screen flex flex-col gap-12 p-10 "></div>
+        <aside className="hidden about-component fixed top-0 right-0 z-40 overflow-y-scroll overscroll-contain overflow-x-hidden overflow-auto">
+          <AboutComponent />
         </aside>
         <div className="top-sticky-wrapper z-0 lg:sticky top-0 pt-12 lg:pt-0">
           <HeroWrapper />
         </div>
-        <section className="projects z-40">
+        <section className="projects z-30">
           <Projects />
         </section>
         <div className="bottom-sticky-wrapper lg:z-20 lg:sticky lg:top-0">

@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about_text-block{
+    @apply flex flex-col gap-4;
+}
+
+.about_text-block h3{
+    @apply text-4xl font-normal;
+}
+
+.about_text-block p{
+    @apply text-lg font-light;
+}

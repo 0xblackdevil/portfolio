@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="relative">
       {projects.map((project, index) => (
-        <div key={index} className=" bg-white">
+        <div key={index} className=" bg-white" id={project.title}>
           <div
             className={`px-6 lg:px-12 ${project.backgroundColor} h-[600px] lg:h-[1000px]`}
           >
@@ -71,7 +71,7 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 px-6 lg:px-12 gap-3 lg:gap-12 -mt-[100px] lg:-mt-[500px] pb-8 lg:pb-0 lg:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 px-6 lg:px-12 gap-3 lg:gap-12 -mt-[100px] lg:-mt-[500px] pb-8 lg:py-20">
             {project.images.map((image, index) => (
               <img
                 key={index}
