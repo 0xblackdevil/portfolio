@@ -22,7 +22,7 @@ export default function AboutComponent() {
       </div>
       <div className=" text-3xl">
         <p className="">
-          As a full-stack blockchain developer based in Pune, I've built my
+          As a full-stack blockchain developer based in Pune, I&apos;ve built my
           career around remote work, which I thoroughly enjoy.
           <br />
           <br />
@@ -34,7 +34,7 @@ export default function AboutComponent() {
       <div className="about_text-block">
         <h3>Creating Delightful Experiences</h3>
         <p>
-          I thrive on creating designs that make a difference. Whether it's
+          I thrive on creating designs that make a difference. Whether it&apos;s
           collaborating with teams or working solo, my goal is to make user
           experiences seamless, beautiful and enjoyable.
         </p>
@@ -42,20 +42,20 @@ export default function AboutComponent() {
       <div className="about_text-block">
         <h3>Working Remotely</h3>
         <p>
-          Remote work is my lifestyle. I've honed my skills working with teams
-          from all over, proving that distance is no barrier to great
+          Remote work is my lifestyle. I&apos;ve honed my skills working with
+          teams from all over, proving that distance is no barrier to great
           collaboration.
         </p>
       </div>
       <div className="about_text-block">
         <h3>On the Hunt for Exciting Opportunities</h3>
         <p>
-          I'm on the lookout for new challenges that push my limits and let me
-          bring my best to the table. If you have an exciting product that needs
-          a creative touch, count me in!
+          I&apos;m on the lookout for new challenges that push my limits and let
+          me bring my best to the table. If you have an exciting product that
+          needs a creative touch, count me in!
           <br />
           <br />
-          Let's connect and make something awesome together!
+          Let&apos;s connect and make something awesome together!
         </p>
       </div>
       <div className="wrapper">
